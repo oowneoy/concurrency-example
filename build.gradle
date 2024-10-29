@@ -23,6 +23,11 @@ dependencies {
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	// https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter
+	implementation 'org.redisson:redisson-spring-boot-starter:3.23.2'
+
 }
 
 tasks.named('test') {
